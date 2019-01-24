@@ -9,6 +9,7 @@ func init() {
 	//beego.NSRouter("/*",&v1.BaseController{},"options:Options")
     beego.Router("/", &controllers.MainController{})
     beego.Router("/login", &controllers.LoginController{},"*:Login")
+    beego.Router("/menu", &controllers.MenuController{},"*:GetMenu")
 }
 
 
